@@ -62,13 +62,11 @@ export default function Header() {
               About
             </li>
           </Link>
-          <Link href="/create-listing">
-            <li className="hidden md:inline text-slate-700 hover:underline">
-              Create Listing
-            </li>
-          </Link>
+         
           <SignedIn>
-            <UserButton />
+            <Link to="/profile">
+              <UserButton />
+            </Link>
           </SignedIn>
           <SignedOut>
             <Link href="/sign-in">
