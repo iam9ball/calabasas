@@ -64,7 +64,7 @@ export default function Header() {
           </Link>
          
           <SignedIn>
-            <Link to="/profile">
+            <Link href="/profile">
               <UserButton />
             </Link>
           </SignedIn>
